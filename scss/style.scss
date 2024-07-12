@@ -1,0 +1,115 @@
+@import "media";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+}
+
+.aside-parent {
+  order: -1;
+}
+
+.main {
+  border: 1px solid black;
+  background-color: lighten(yellow, 40%);
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &__inner-parent {
+    background: linear-gradient(red,  blue, orange);
+  background-clip: text;
+  color: transparent;
+  margin-top: 50px;
+  font-size: 24px;
+  }
+}
+
+.nav {
+  background-color: #333;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.aside {
+  border: 1px solid black;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: sticky;
+  top: 0;
+  background-image: url(../img/Mountains\ Sun\ Rays\ 2880x1800.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &--show {
+    min-height: 100vh;
+    opacity: 1;
+    transform: perspective(600px) translate(0, 0%);
+  }
+
+  &__title {
+    position: static;
+    top: 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 4px;
+    color: #fff;
+  }
+
+  &__code-names {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid black;
+    margin-bottom: 28px;
+    padding: 8px 0;
+    line-height: 1;
+    background-color: lighten(yellow, 45%);
+    color: black;
+    cursor: pointer;
+    transition: all 0.8s ease 0s;
+  }
+
+  &__code-names:hover {
+    background-color: lighten(green, 50%);
+  }
+
+  &__code-names:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.overlay::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 17, 22, 0.561);
+  z-index: -1;
+}
