@@ -136,7 +136,7 @@ btn.addEventListener("click", function () {
     }
   },
   {
-    name: "arrInclude-function",
+    name: "ArrInclude-function",
     codeName: function () {
       // функцию, которая определяет, есть в массиве 
       // элемент с 
@@ -164,7 +164,7 @@ btn.addEventListener("click", function () {
     }
   },
   {
-    name: "greetForTime-function",
+    name: "GreetForTime-function",
     codeName: function greetForTime () {
 
       const time = new Date();
@@ -185,6 +185,140 @@ btn.addEventListener("click", function () {
       //   titleTime.innerText = "Good night";
       // }
       // greet();
+    }
+  },
+  {
+    name: "Form-fieldset",
+    codeName: function () {
+//       <form action="https://freecatphotoapp.com/submit-cat-photo">
+        
+//         <fieldset>
+// <legend>Is your cat an indoor or outdoor cat?</legend>
+//         <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+//         <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+//       </fieldset>
+//         <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+//         <button type="submit">Submit</button>
+//       </form>
+    }
+  },
+  {
+    name: "Accardeon-function",
+    codeName: function () {
+    //   window.addEventListener("load", function () {
+    //     const title = document.querySelectorAll(".accordeon__title");
+      
+    //     for(let i = 0; i < title.length; i++) {
+    //       title[i].addEventListener("click", function () {
+    //         this.classList.toggle("minus");
+    //         this.nextElementSibling.classList.toggle("text");
+    //         this.nextElementSibling.classList.toggle("text-underline");
+    //       })
+    //     }
+      
+    //   })
+     }
+  },
+  {
+    name: "Accardeon-function-2",
+    codeName: function () {
+      // const englishWord = document.querySelectorAll(".english-word");
+       
+      //  englishWord.forEach((title) => {
+      //   title.addEventListener("click", () => {
+      //     title.classList.toggle("minus-icon");
+      //     title.nextElementSibling.classList.toggle("translating--show");
+      //   })
+      //  }); 
+    }
+  },
+  {
+    name: "Animated-text",
+    codeName: function () {   
+//script src="https://unpkg.com/ityped@1.0.2"
+//script
+//     const animatedText = document.querySelector(".animated-text__strong");
+
+//     ityped.init(animatedText, {
+//       showCursor: true,
+//       strings: ["Coding your future", "Step by step"],
+//       backDelay: 600,
+//       backSpeed: 100,
+//       typeSpeed: 200,
+//     });
+//   script
+    }
+  },
+  {
+    name: "YouTube logo with CSS",
+    codeName: function () {
+      // .logo {
+      //   width: 70px;
+      //   height: 50px;
+      //   background-color: red;
+      //   border-radius: 60% / 9%;
+      //   position: relative;
+      //   display: inline-block;
+      // }
+      
+      // .logo::before {
+      //   position: absolute;
+      //   content: "";
+      //   top: 7%;
+      //   bottom: 7%;
+      //   left: -9.5%;
+      //   right: -9.5%;
+      //   background-color: red;
+      //   border-radius: 9% / 50%;
+      // }
+      
+      // .logo::after {
+      //   position: absolute;
+      //   content: "";
+      //   border-top: 14px solid transparent;
+      //     border-bottom: 11px solid transparent;
+      //     border-left: 20px solid #fff;
+      //     left: 27px;
+      //     top: 11px;
+      // }
+    }
+  },
+  {
+    name: "Reverse number",
+    codeName: function () {
+      // function reverseNumber (number) {
+      //  number = prompt("Напишите трехзначное число");
+      // let a = number.split("").reverse().join("");
+      // let intoNum = Number(a) + 2;
+      
+      // alert(intoNum);
+      // }
+      
+      
+      // reverseNumber();
+      //                    // different example
+      
+      // let a = +prompt("Enter a value");
+      // //     let sum = 0;
+      // //     while(a > 0)
+      // //     {
+      // //       b = a % 10;
+      // //       sum = sum * 10 + b;
+      // //       a = Math.floor(a / 10);
+      // //     }
+      // //     alert(sum);
+      
+      
+      // let askNum = +prompt("Напишите трехзначное число");
+      // let forReverse = 0;
+      
+      // while(askNum > 0) {
+      //    let num = askNum % 10;
+      //    forReverse = forReverse * 10 + num;
+      //    askNum = Math.floor(askNum / 10);
+      
+      //   }
+      //   alert(forReverse);
     }
   }
 ]
