@@ -320,5 +320,100 @@ btn.addEventListener("click", function () {
       //   }
       //   alert(forReverse);
     }
+  },
+  {
+    name: "Запросите у пользователя радиус окружности и выведите result",
+    codeName: function () {
+      // let getNumerR = Number(prompt("Напишите радиус окружности"));
+// const numericP = 3.14;
+// let numerOfR = getNumerR * getNumerR;
+// let resultOfS = numericP * numerOfR;
+// let resultOfS2 = Math.floor(resultOfS);
+
+// alert("Площадь " + resultOfS2);
+    }
+  },
+  {
+    name: "Counter distance",
+    codeName: function () {
+      
+// let askDistance = Number(prompt("Напишите расстояние в км между двумя городами"));
+// let askTime = Number(prompt("Напишите за сколько часов вы хотите добраться"));
+// let calc = askDistance / askTime;
+// alert("Чтобы преодолеть это расстояние за " + askTime + " часа придётся ехать со скоростью " + calc + "км в час.")
+
+    }
+  },
+  {
+    name: "Расчет обьем флешки",
+    codeName: function () {
+      // let askForGb = Number(prompt("Укажите объем вашей флешки в Гб."));
+// const gbIntoMb = 1024;
+// const mbForGb = 820;
+// const result1 = askForGb * gbIntoMb / mbForGb;
+// const result2 = Math.floor(result1);
+
+// alert("В вашу флешку помещается " + result2 + " файлов размером в 820 Мб");
+    }
+  },
+  {
+    name: "Пользователь вводит сумму денег в кошельке и цену одной шоколадки. Программа выводит сколько шоколадок может купить пользователь и сколько сдачи у него останется",
+    codeName: function () {
+      // let amountOfMoney = Number(prompt("Введите сумму денег"));
+// let chocolatePrice = Number(prompt("Введите цену одной шоколадки."));
+
+// if(amountOfMoney > chocolatePrice) {
+//   const forAmountChocolate = Math.floor(amountOfMoney / chocolatePrice);
+//   const forAmountPrice = forAmountChocolate * chocolatePrice;
+//   const forChange = amountOfMoney - forAmountPrice;
+
+//   alert("На эту сумму вы можете купить " + forAmountChocolate + " шоколадку и у вас остается " + forChange + " сдачи");
+// }else {
+//   alert("У вас не хватает денег");
+// }
+    }
+  },
+  {
+    name: "Функция для подсчета необходимого времени для преодоления переданного расстояния со средней скоростью.Учтите, что через каждые 4 часа дороги водителю необходимо делать перерыв на 1 час.",
+    codeName: function () {
+  //     let result = Math.floor(askDistance / averageSpeed);
+  // for(let hour = 1; hour < result; hour++) {
+  //   if(hour % 4 === 0) {
+  //      result++;
+  //      alert(result);
+  //   }
+    }
+  },
+  {
+    name: "add time to time:",
+    codeName: function () {
+//       var CurrentTime = new Date();
+//     CurrentTime.setMinutes(CurrentTime.getMinutes() + 15);
+//     console.log(CurrentTime.getHours()+":"+CurrentTime.getMinutes());
+
+// DIFFERENT EXAMPLE:
+
+//  let time = new Date();
+//   time.setHours(time.getHours() + 2);
+//   let min = time.getMinutes();
+//   let sec = time.getSeconds();
+
+//   document.write(
+//     `<h2 style="color:red; font-size:44px; text-align:center;">${time .getHours()}:${min}:${sec}</h2>
+//     <h2 style="color:green; text-align:center;">Add 2 hours</h2>`
+//   )
+    }
+  },
+  { 
+    name: "Таблица умнож",
+    codeName: function () {
+      // for(let i = 2; i <= 9; i += 1) {
+      //   for(let j = 1; j <= 10; j += 1) {
+      //     console.log(
+      //       `${i}x${j}=${i*j}`
+      //     );
+      //   }
+      // }
+    }
   }
 ]
