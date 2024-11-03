@@ -415,5 +415,203 @@ btn.addEventListener("click", function () {
       //   }
       // }
     }
-  }
+  },
+  {
+    name: "Удаление повтор-ся элементов из массива",
+    codeName: function () {
+//       const numbers = [-1, 3, 9, -9, 100, -100, 100, 100];
+// const newSet = new Set(numbers); // => Set(6) { -1, 3, 9, -9, 100, -100 }
+// //new Set создаёт новую коллекцию, а нам нужен массив
+// //воспользуемся методом Array.from(). Получаем:
+// const uni = Array.from(newSet); // => [ -1, 3, 9, -9, 100, -100 ]
+
+// console.log(uni)
+
+// function unique(arr) {
+//   let result = [];
+
+//   for (let str of arr) {
+//     if (!result.includes(str)) {
+//       result.push(str);
+//     }
+//   }
+
+//   return result;
+// }
+
+// let strings = ["кришна", "кришна", "харе", "харе",
+//   "харе", "харе", "кришна", "кришна", ":-O"
+// ];
+
+// //alert( unique(strings) ); // кришна, харе, :-O
+    }
+  },
+  {
+    name: "Удаление повтор-ся элементов из массива обьектов",
+    codeName: function () {
+//       const items = [{ id: 1 }, { id: 2 }, { id: 1 }];
+// // Применяем магию JavaScript 🧙‍♂️
+// const unique = items.filter((obj, idx, arr) => 
+//   idx === arr.findIndex((t) => t.id === obj.id));
+// console.log(unique); // Вывод: [{ id: 1 }, { id: 2 }]
+// // Клонирование побеждено 👯‍♂️
+    }
+  },
+  {
+    name: "Создать объект, описывающий время ",
+    codeName: function () {
+      // Original time
+
+// function showTime () {
+//   let date = new Date;
+//   let hours = date.getHours(); 
+//   let min = date.getMinutes(); 
+//   let sec = date.getSeconds();
+
+//   const origin = document.querySelector(".original-time");
+//   origin.innerHTML = `<h2 class="time">${hours}:${min}:${sec}</h2>
+//     <h2 class="title">Original time</h2>`
+// }
+
+// setInterval(showTime, 1000);
+
+// //getSeconds + 30seconds
+
+// function addSecondsToTime () {
+//   let time = new Date;
+//   time.setSeconds(time.getSeconds() + 30)
+//   let hours = time.getHours();
+//   let min = time.getMinutes();
+  
+//   const second = document.querySelector(".second");
+//   second.innerHTML = `<h2 class="time">${hours}:${min}:${time.getSeconds()}</h2>
+//     <h2 class="title">Add 30 seconds</h2>`
+// }
+
+// setInterval(addSecondsToTime, 1000);
+
+
+// // GetMinutes + 30min
+
+// function addMin () {
+//   let time = new Date();
+//   time.setMinutes(time.getMinutes() + 30);
+//   let hours = time.getHours();
+//   let sec = time.getSeconds();
+
+//   const minute = document.querySelector(".minute");
+//   minute.innerHTML =  `<h2 class="time">${hours}:${time.getMinutes()}:${sec}</h2>
+//     <h2 class="title">Add 30 minutes</h2>`
+// }
+
+// setInterval(addMin, 1000);
+
+
+// //getHours + 2hours
+
+// function addHours () {
+//   let time = new Date();
+//   time.setHours(time.getHours() + 2);
+//   let min = time.getMinutes();
+//   let sec = time.getSeconds();
+
+//   const hour = document.querySelector(".hour");
+//   hour.innerHTML = `<h2 class="time">${time .getHours()}:${min}:${sec}</h2>
+//     <h2 class="title">Add 2 hours</h2>`
+// }
+
+// setInterval(addHours, 1000);
+    }
+  },
+  {
+    name: "Simple pagination",
+    codeName: function () {
+//       const link = document.querySelectorAll(".link");
+
+// link.forEach(l => {
+//   l.addEventListener("click", pagination);
+// });
+
+// let currentValue = 1;
+// const valueOfFirstBtn = document.querySelector(".first-value");
+// const valueOfLastBtn = document.querySelector(".last-value");
+
+//  function pagination (event) {
+//   link.forEach(l => {
+//     l.classList.remove("active-link");
+//   });
+//   event.target.classList.add("active-link");
+//   currentValue = event.target.value;
+//   getData(currentValue);
+//   const card = document.querySelectorAll(".card");
+//   card.forEach((element) => {
+//     element.remove();
+//   })
+// }
+
+// //prev-btn
+// const prev = document.querySelector(".prev");
+// prev.addEventListener("click", () => {
+// if(currentValue > 1) {
+//   link.forEach(l => {
+//     l.classList.remove("active-link");
+//   });
+//   currentValue--;
+//   link[currentValue-1].classList.add("active-link");
+// }
+// })
+
+// //next-btn
+// const next = document.querySelector(".next");
+// next.addEventListener("click", () => {
+// if(currentValue < 5) {
+//   link.forEach(l => {
+//     l.classList.remove("active-link");
+//   });
+//   currentValue++;
+//   link[currentValue-1].classList.add("active-link");
+// }
+// })
+
+// //prev-pages-btn
+// const prevPagesBtn = document.querySelector(".prev-pages-btn");
+//  prevPagesBtn.addEventListener("click", prevPage);
+
+// function prevPage () {
+//   if(valueOfFirstBtn.value !== 1) {
+//     link.forEach(l => {
+//       l.classList.remove("active-link");
+//       l.value--;
+//       l.innerText--;
+//     });
+//   }
+// }
+
+// //next-pages-btn
+// const nextPagesBtn = document.querySelector(".next-pages-btn");
+// nextPagesBtn.addEventListener("click", () => {
+//   if(valueOfLastBtn.value !== 42) {
+//     link.forEach(l => {
+//       l.classList.remove("active-link");
+//       l.value++;
+//       l.innerText++;
+//     });
+//   }
+// });
+    }
+  },
+  {
+    name: "Popup show/hide",
+    codeName: `
+    //popup hide
+    opacity: 0;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+  transition: all 0.8s ease 0s;
+  
+ .popup--show {
+  opacity: 1;
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+}
+  `
+  }                          
 ]
