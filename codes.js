@@ -613,5 +613,47 @@ btn.addEventListener("click", function () {
   transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
 }
   `
-  }                          
+  },
+  {
+    name: "Add counter to html",
+    codeName: `
+                const flashInside = document.querySelector(".flash-inside")
+    let flashNum = Number(flashInside.innerHTML)
+    flashInside.classList.add("flash-inside--show")
+    const flashInsideShow = document.querySelector(".flash-inside--show")
+
+
+    let counter = 0;
+
+    if (flashInsideShow) {
+      let timerId = setInterval(() => {
+        flashInside.innerHTML = flashNum += 1
+        counter += 1;
+
+        if (counter === 3) {
+          setTimeout(() => { 
+            clearInterval(timerId);
+            document.querySelector(".flash-inside--show").classList.remove("flash-inside--show")
+            document.querySelector(".flash").classList.add("flash-show")
+            document.querySelector(".flash-inside").innerHTML = ""
+          }, 1000);
+         }
+      }, 1600);
+
+    }
+
+    setTimeout(() => {
+      document.querySelector(".flash-show").classList.remove("flash-show")
+      counter = 0
+    }, 8000)
+
+         // if (flashInsideShow) {
+    //   setInterval(() => {
+    //     for(start = 0; start < 1; start++) {
+    //       flashInside.innerHTML = flashNum += 1
+    //     }
+    //   }, 2000);
+    // }
+    `
+  }
 ]
