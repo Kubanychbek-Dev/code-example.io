@@ -403,6 +403,68 @@ btn.addEventListener("click", function () {
 //     <h2 style="color:green; text-align:center;">Add 2 hours</h2>`
 //   )
     }
+
+                                                          // // Original time
+
+// function showTime () {
+//   let date = new Date;
+//   let hours = date.getHours(); 
+//   let min = date.getMinutes(); 
+//   let sec = date.getSeconds();
+
+//   const origin = document.querySelector(".original-time");
+//   origin.innerHTML = `<h2 class="time">${hours}:${min}:${sec}</h2>
+//     <h2 class="title">Original time</h2>`
+// }
+
+// setInterval(showTime, 1000);
+
+// //getSeconds + 30seconds
+
+// function addSecondsToTime () {
+//   let time = new Date;
+//   time.setSeconds(time.getSeconds() + 30)
+//   let hours = time.getHours();
+//   let min = time.getMinutes();
+  
+//   const second = document.querySelector(".second");
+//   second.innerHTML = `<h2 class="time">${hours}:${min}:${time.getSeconds()}</h2>
+//     <h2 class="title">Add 30 seconds</h2>`
+// }
+
+// setInterval(addSecondsToTime, 1000);
+
+
+// // GetMinutes + 30min
+
+// function addMin () {
+//   let time = new Date();
+//   time.setMinutes(time.getMinutes() + 30);
+//   let hours = time.getHours();
+//   let sec = time.getSeconds();
+
+//   const minute = document.querySelector(".minute");
+//   minute.innerHTML =  `<h2 class="time">${hours}:${time.getMinutes()}:${sec}</h2>
+//     <h2 class="title">Add 30 minutes</h2>`
+// }
+
+// setInterval(addMin, 1000);
+
+
+// //getHours + 2hours
+
+// function addHours () {
+//   let time = new Date();
+//   time.setHours(time.getHours() + 2);
+//   let min = time.getMinutes();
+//   let sec = time.getSeconds();
+
+//   const hour = document.querySelector(".hour");
+//   hour.innerHTML = `<h2 class="time">${time .getHours()}:${min}:${sec}</h2>
+//     <h2 class="title">Add 2 hours</h2>`
+// }
+
+// setInterval(addHours, 1000);
   },
   { 
     name: "Таблица умнож",
